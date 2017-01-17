@@ -13,6 +13,24 @@ namespace Day2
     {
         static void Main(string[] args)
         {
+            //DogStuff();
+            Warrior gromm = new Warrior("Grommash");
+            Warrior soap = new Warrior("Soap McTavish");
+
+            soap.Attack(gromm);
+            Console.WriteLine(soap);
+            Console.WriteLine(gromm);
+            soap.Attack(gromm);
+            gromm.Attack(soap);
+            soap.Attack(gromm);
+            soap.Attack(gromm);
+            Console.WriteLine(soap);
+            Console.WriteLine(gromm);
+
+        }
+
+        private static void DogStuff()
+        {
             var fred = new Dog("Fred");
             fred.HappyBirthday();
             fred.HappyBirthday();
